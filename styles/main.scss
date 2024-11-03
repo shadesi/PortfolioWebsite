@@ -6,6 +6,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -13,6 +16,7 @@ header {
     color: white;
     padding: 1rem 0;
     text-align: center;
+    width: 100%;
 
     nav ul {
         list-style: none;
@@ -30,12 +34,12 @@ header {
     }
 }
 
-section {
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     padding: 2rem;
-    margin: 1rem 0;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .watermark {
@@ -47,4 +51,20 @@ section {
     z-index: -1;
     width: 200px; /* Adjust the size as needed */
     height: auto;
+    margin-right: 2rem;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
 }
