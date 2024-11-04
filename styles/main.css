@@ -2,65 +2,88 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #561b1b;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 header {
-  background-color: #3498db;
-  color: white;
-  padding: 1rem 0;
-  text-align: center;
   width: 100%;
+  background-color: rgb(39, 39, 59);
+  color: rgb(244, 240, 240);
+  padding: 1rem 0;
 }
-header nav ul {
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.navbar h1 {
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+.navbar ul {
   list-style: none;
+  display: flex;
+  gap: 1rem;
   padding: 0;
+  margin: 0;
 }
-header nav ul li {
-  display: inline;
-  margin: 0 1rem;
-}
-header nav ul li a {
+.navbar ul li a {
   color: white;
   text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.navbar ul li a:hover {
+  background-color: #2ecc71;
 }
 
 .content-container {
   display: flex;
+  width: 100%;
+  height: calc(100vh - 100px); /* Adjust height to fit the viewport */
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  padding: 2rem;
+  height: 110%; /* Make the logo container take up the full height */
 }
 
 .watermark {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.1;
-  z-index: -1;
-  width: 200px; /* Adjust the size as needed */
-  height: auto;
-  margin-right: 2rem;
+  height: 100%; /* Make the logo fill the container height */
+  width: auto;
 }
 
 .sections {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: space-between;
+  padding: 3rem;
+  gap: 4rem; /* Increase space between the boxes */
 }
 
 section {
   padding: 2rem;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 3D effect */
   width: 100%;
-  max-width: 600px;
+  max-width: 660px;
+  flex: 1; /* Make each section take equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
