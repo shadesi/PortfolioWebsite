@@ -138,4 +138,14 @@ section {
   justify-content: center;
 }
 
+.github-logo {
+  width: 80px; /* adjust size */
+  height: auto;
+  margin-top: 1rem;
+  transition: transform 0.3s;
+}
+.github-logo:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
 /*# sourceMappingURL=main.css.map */
