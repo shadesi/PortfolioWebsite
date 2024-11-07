@@ -148,4 +148,88 @@ section {
   transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
+.github-logo-inline {
+  width: 55px; /* Adjust size as needed */
+  height: auto;
+  margin-left: 10px; /* Space between logo and text */
+  vertical-align: middle; /* Align with text */
+}
+
+ul {
+  list-style: none; /* Remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px; /* Space between text and logo */
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px; /* Round edges */
+  transition: background-color 0.3s;
+  flex-grow: 1; /* Make the link take up the remaining space */
+}
+
+ul li a.project-item {
+  background-color: rgb(12, 12, 203); /* Navy blue background */
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+ul li a.project-item:hover {
+  background-color: rgb(6, 6, 91); /* Dark blue on hover */
+}
+
+ul li a:hover {
+  background-color: rgb(6, 6, 91); /* Dark blue on hover */
+}
+
+#projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+
+#projects ul li {
+  flex: 1 1 30%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+#projects ul li:hover {
+  background-color: #e0e0e0;
+}
+
+#projects ul li p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+#projects ul li a img.github-logo-inline {
+  width: 30px;
+  height: auto;
+  margin-top: 10px;
+}
+
 /*# sourceMappingURL=main.css.map */

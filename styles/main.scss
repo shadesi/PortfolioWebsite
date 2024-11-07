@@ -168,3 +168,10 @@ section {
         transform: scale(1.1); /* Slightly enlarge on hover */
     }
 }
+
+.github-logo-inline {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 8px; /* Space between logo and text */
+    vertical-align: middle; /* Align with text */
+}
